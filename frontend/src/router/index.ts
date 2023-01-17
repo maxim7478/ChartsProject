@@ -29,6 +29,45 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/d-three/",
+      name: "dThreeLibrary",
+      component: () => import("@/views/DThreeView/DThreeView.vue"),
+      redirect: { name: "dThreeHome" },
+      children: [
+        {
+          path: "home",
+          name: "dThreeHome",
+          component: () =>
+            import("@/components/DThreeComponents/DThreeHome.vue"),
+        },
+        {
+          path: "chart/:type",
+          name: "itemDThree",
+          component: () => import("@/views/DThreeView/DThreeMainChart.vue"),
+        },
+      ],
+    },
+    {
+      path: "/google-charts/",
+      name: "googleCharts",
+      component: () => import("@/views/GoogleChartsView/GoogleChartsView.vue"),
+      redirect: { name: "googleChartsHome" },
+      children: [
+        {
+          path: "home",
+          name: "googleChartsHome",
+          component: () =>
+            import("@/components/GoogleChartsComponent/GoogleChartsHome.vue"),
+        },
+        {
+          path: "chart/:type",
+          name: "itemGoogleCharts",
+          component: () =>
+            import("@/views/GoogleChartsView/GoogleChartsMain.vue"),
+        },
+      ],
+    },
   ],
 });
 

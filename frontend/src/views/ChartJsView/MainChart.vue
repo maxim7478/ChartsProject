@@ -1,7 +1,4 @@
 <template>
-  <div class="main-charts">
-
-  </div>
   <bar-chart v-if="typeChartV === 'Bar'" />
   <line-chart v-if="typeChartV === 'Line'"/>
   <doughnut-chart v-if="typeChartV === 'Doughnut'"/>
@@ -23,11 +20,3 @@ const typeChartV = computed(() => {
   return route.params.type;
 });
 </script>
-
-<style scoped lang="scss">
-.main-charts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>

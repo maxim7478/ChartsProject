@@ -7,7 +7,7 @@
         :key="index"
       >
         <router-link
-          :to="{ name: 'itemChartJs', params: { type: item } }"
+          :to="{ name: 'itemDThree', params: { type: item } }"
           @click="switchChart(item)"
           >{{ item }}</router-link
         >
@@ -22,7 +22,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const typesChartArr = ref(["Bar", "Line", "Doughnut", "Pie", "Radar"]);
+const typesChartArr = ref(["Line"]);
 const typeChart = ref("bar");
 const switchChart = (type: string) => {
   typeChart.value = type;
