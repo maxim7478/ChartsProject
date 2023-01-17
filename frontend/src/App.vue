@@ -8,13 +8,15 @@ import { RouterLink, RouterView } from "vue-router";
       <nav>
         <router-link to="/">Home</router-link>
         <router-link :to="{ name: 'chartJs' }">ChartJS</router-link>
+        <router-link :to="{ name: 'dThreeLibrary' }">D3</router-link>
+        <router-link :to="{ name: 'googleCharts' }">Google Charts</router-link>
       </nav>
     </div>
   </header>
   <RouterView />
 </template>
 
-<style >
+<style>
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -30,6 +32,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  min-width: max-content;
 }
 
 nav a.router-link-exact-active {

@@ -16,10 +16,12 @@
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-chartjs": "^5.2.0",
+    "vue-google-charts": "^1.1.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
+    "@types/d3": "^7.4.0",
     "@types/node": "^18.11.12",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
