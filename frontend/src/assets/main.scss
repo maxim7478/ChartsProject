@@ -1,16 +1,19 @@
-@import './base.css';
+@import './base.scss';
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
 }
 
 a,
 .blue {
   text-decoration: none;
-  color: hsl(231, 100%, 50%);
+  color: #0077FF;
   transition: 0.4s;
 }
 
@@ -20,6 +23,11 @@ a,
   justify-content: center;
   align-items: center;
   height: 100%;
+  &__title {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
   & h1, img, .svg-desc {
     margin: 0 auto;
   }
@@ -37,9 +45,12 @@ a,
   width: 100%;
   margin-bottom: 10px;
   &__item {
-    margin-right: 10px;
     & a {
-      color: red;
+      color: #D10257;
+      padding: 0 1rem;
+      &:hover {
+        background: rgba(209, 2, 87, 0.2);
+      }
     }
     & a:active {
       color: black;
@@ -50,9 +61,17 @@ a,
   }
 }
 
+.chart {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: rgba(0, 119, 255, 0.2);
   }
 }
 

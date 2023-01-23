@@ -68,6 +68,25 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/ploty-js/",
+      name: "plotyJs",
+      component: () => import("@/views/PlotyView/PlotyView.vue"),
+      redirect: { name: "plotyJsHome" },
+      children: [
+        {
+          path: "home",
+          name: "plotyJsHome",
+          component: () =>
+            import("@/components/PlotyJsComponents/PlotyHome.vue"),
+        },
+        {
+          path: "chart/:type",
+          name: "itemPlotyJs",
+          component: () => import("@/views/PlotyView/PlotyMain.vue"),
+        },
+      ],
+    },
   ],
 });
 

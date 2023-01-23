@@ -11,9 +11,12 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.2.3",
     "chart.js": "^4.1.2",
     "d3": "^7.8.1",
     "pinia": "^2.0.28",
+    "plotly.js-dist-min": "^2.18.0",
     "vue": "^3.2.45",
     "vue-chartjs": "^5.2.0",
     "vue-google-charts": "^1.1.0",
@@ -23,6 +26,7 @@
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/d3": "^7.4.0",
     "@types/node": "^18.11.12",
+    "@types/plotly.js-dist-min": "^2.3.1",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",

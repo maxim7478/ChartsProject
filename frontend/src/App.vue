@@ -8,8 +8,9 @@ import { RouterLink, RouterView } from "vue-router";
       <nav>
         <router-link to="/">Home</router-link>
         <router-link :to="{ name: 'chartJs' }">ChartJS</router-link>
-        <router-link :to="{ name: 'dThreeLibrary' }">D3</router-link>
         <router-link :to="{ name: 'googleCharts' }">Google Charts</router-link>
+        <router-link :to="{ name: 'plotyJs' }">PlotyJS</router-link>
+        <router-link :to="{ name: 'dThreeLibrary' }">D3</router-link>
       </nav>
     </div>
   </header>
